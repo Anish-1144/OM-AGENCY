@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import GetInTouch from "./components/Contect";
-import Job from "./components/Job";
+import Job from "./components/job";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonial";
 //  import Apoint from "./components/Apoint";
