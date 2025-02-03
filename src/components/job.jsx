@@ -42,7 +42,7 @@ export default function Job() {
           </p>
         </div>
 
-        {/* Job Categories Grid */}
+        
         <div className=" md:h-100px w-200px md:pr-40 mb-8 grid gap-6 md:grid-cols-2 md:gap-8">
           {jobCategories.map((job) => (
             <Card
