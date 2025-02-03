@@ -10,7 +10,7 @@ import Testimonials from "./components/Testimonial";
 //  import Apoint from "./components/Apoint";
 import { ServiceBanner} from "./components/Servicepage";
 import ServiceSection from "./components/ServiceCards";
-import Videos from "./components/work/Videoediting";
+import ComingSoon from "./components/work/Videoediting";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         <Header />
         <ServiceBanner />
         <ServiceSection />
-          {/* <Apoint/> */}
+        {/* <Apoint/> */}
         <Footer />
       </div>
     ),
@@ -41,20 +41,45 @@ const router = createBrowserRouter([
   {
     path: "/OurWork",
     element: (
-      <div className="bg-[#D91A46] h-full w-full">
+      <div className="bg-[#D91A46] h-full w-full ">
         <Header />
-        <h1 className="text-center text-white">Our Work</h1>
+        {/* <h1 className="text-center text-white">Our Work</h1> */}
         <Outlet />
         <Footer />
       </div>
     ),
     children: [
-      { path: "web-design", element: <div>Web Design Section</div> },
-      { path: "graphic-design", element: <div>Graphic Design Section</div> },
-      { path: "app-development", element: <div>App Development Section</div> },
+      {
+        path: "web-design",
+        element: (
+          <div >
+            <ComingSoon />
+          </div>
+        ),
+      },
+      {
+        path: "graphic-design",
+        element: (
+          <div>
+            <ComingSoon />
+          </div>
+        ),
+      },
+      {
+        path: "app-development",
+        element: (
+          <div>
+            <ComingSoon />
+          </div>
+        ),
+      },
       {
         path: "video-production",
-        element: <div><Videos/></div>,
+        element: (
+          <div>
+            <ComingSoon />
+          </div>
+        ),
       },
       {
         path: "digital-marketing",

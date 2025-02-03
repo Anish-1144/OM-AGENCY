@@ -59,7 +59,7 @@ export default function Header() {
                     className="focus:bg-[#D91A46] focus:text-white"
                   >
                     <Link
-                      to={`/our-work/${item.path}`}
+                      to={`/OurWork/${item.path}`}
                       className="w-full p-2 font-medium"
                     >
                       {item.label}
@@ -119,7 +119,7 @@ export default function Header() {
                   {ourWorkItems.map((item) => (
                     <Link
                       key={item.path}
-                      to={`/our-work/${item.path}`}
+                      to={`/OurWork/${item.path}`}
                       className="block text-white text-sm hover:text-opacity-80 transition-colors"
                       onClick={handleMenuClose}
                     >

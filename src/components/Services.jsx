@@ -97,7 +97,9 @@ export default function Services() {
                 src={service.video}
                 muted
                 loop
-                autoPlay
+                // autoPlay
+                onMouseEnter={(e) => e.target.play()}
+                onMouseLeave={(e) => e.target.pause()}
                 style={{
                   borderRadius: "1rem", // Adjust the value for rounding as needed
                   backgroundColor: "transparent", // Ensures the background is transparent
