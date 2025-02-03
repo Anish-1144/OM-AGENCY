@@ -9,6 +9,8 @@ const services = [
   {
     title: "VIDEO EDITING",
     color: "bg-[#ff4d79]",
+    video:
+      "https://res.cloudinary.com/dmrwefamp/video/upload/v1738589715/video1_dbuhbx.mp4", // Add your image path here
     points: [
       "High-quality video production",
       "Custom transitions and effects",
@@ -18,6 +20,8 @@ const services = [
   {
     title: "GRAPHIC DESIGN",
     color: "bg-[#7fffd4]",
+    video:
+      "https://res.cloudinary.com/dmrwefamp/video/upload/v1738589715/video2_tpei6s.mp4",
     points: [
       "Custom logo and brand designs",
       "Eye-catching materials",
@@ -27,6 +31,7 @@ const services = [
   {
     title: "2D & 3D ANIMATION",
     color: "bg-[#d387ff]",
+    video:"https://res.cloudinary.com/dmrwefamp/video/upload/v1738589715/video3_et3zhd.mp4", // Add your image path here
     points: [
       "High-Quality visuals and Storytelling",
       "Customized, Client-Centric Solutions",
@@ -36,6 +41,8 @@ const services = [
   {
     title: "WEB DEVELOPMENT",
     color: "bg-[#ff69b4]",
+    video:
+      "https://res.cloudinary.com/dmrwefamp/video/upload/v1738589715/video4_tv9abd.mp4", // Add your image path here
     points: [
       "Responsive, modern websites",
       "Latest technology and frameworks",
@@ -45,6 +52,8 @@ const services = [
   {
     title: "APP DEVELOPMENT",
     color: "bg-[#40e0ff]",
+    video:
+      "https://res.cloudinary.com/dmrwefamp/video/upload/v1738589716/video5_uekypj.mp4", // Add your image path here
     points: [
       "Custom-built apps for unique business needs",
       "Seamless User Experience (UX) and High-Performance Design",
@@ -54,6 +63,8 @@ const services = [
   {
     title: "SOCIAL MEDIA MANAGEMENT",
     color: "bg-[#ff8c40]",
+    video:
+      "https://res.cloudinary.com/dmrwefamp/video/upload/v1738589626/video6_othrg0.mp4", // Add your image path here
     points: [
       "Content Creation and Consistency",
       "Engagement Growth for Maximum Impact",
@@ -66,24 +77,32 @@ export default function Services() {
   return (
     <section className="bg-yellow-300 min-h-screen w-full overflow-hidden font-mono">
       {/* Top Marquee */}
-      <Marquee speed={100} gradient={false} className="py-1 bg-black">
-        <span className="text-4xl font-black text-yellow-300 whitespace-nowrap mr-8">
-          OUR SERVICES OUR SERVICES OUR SERVICES OUR SERVICES OUR SERVICES OUR
-          SERVICES
+      <Marquee speed={100} gradient={false} className="py-2 bg-black">
+        <span className="text-4xl bg-black font-extrabold text-yellow-300 whitespace-nowrap ">
+          * OUR SERVICES * OUR SERVICES * OUR SERVICES * OUR SERVICES * OUR
+          SERVICES * OUR SERVICES * OUR SERVICES
         </span>
       </Marquee>
 
       {/* Services Grid */}
-      <div className="grid gap-16 p-4 md:m-28  md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-16 p-4 md:m-28  md:grid-cols-2 lg:grid-cols-3 font-gogo">
         {services.map((service, index) => (
           <Card
             key={index}
-            className={`${service.color} rounded-2xl border-4 border-black p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]`}
+            className={`${service.color} rounded-3xl border-4 border-black p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]`}
           >
-            <div className="mb-4 aspect-video w-full bg-black p-4">
-              <h3 className="text-center font-serif text-xl font-bold text-yellow-300">
-            
-              </h3>
+            {" "}
+            <div className=" rounded">
+              <video
+                src={service.video}
+                muted
+                loop
+                autoPlay
+                style={{
+                  borderRadius: "1rem", // Adjust the value for rounding as needed
+                  backgroundColor: "transparent", // Ensures the background is transparent
+                }}
+              ></video>
             </div>
             <h2 className="mb-4 text-2xl font-black">{service.title}</h2>
             <ul className="mb-6 space-y-2">

@@ -26,7 +26,10 @@ export function ServiceBanner() {
 
       {/* Right section with image */}
       <div className="w-52 md:w-1/3">
-        <img src="/1.png.svg" className="w-full h-auto object-cover" />
+        <img
+          src="https://res.cloudinary.com/dmrwefamp/image/upload/v1738591537/service_ijraws.png"
+          className="w-full h-auto object-cover"
+        />
       </div>
     </div>
   );

@@ -12,7 +12,8 @@ const testimonials = [
       name: "Nadeem Khan",
       role: "Co-Founder",
       company: "HonestStory",
-      avatar: "/avatar-1-1.png",
+      avatar:
+        "https://res.cloudinary.com/dmrwefamp/image/upload/v1738590679/avatar-1-1_yzbbco.png",
     },
   },
   {
@@ -22,7 +23,8 @@ const testimonials = [
       name: "Madhav Krishna",
       role: "CEO",
       company: "Vahan",
-      avatar: "/avatar-1-2.png",
+      avatar:
+        "https://res.cloudinary.com/dmrwefamp/image/upload/v1738590679/avatar-1-2_zxeadh.png",
     },
   },
   {
@@ -32,7 +34,8 @@ const testimonials = [
       name: "Sarah Chen",
       role: "Marketing Director",
       company: "TechFlow",
-      avatar: "/avatar-1-3.png",
+      avatar:
+        "https://res.cloudinary.com/dmrwefamp/image/upload/v1738590679/avatar-1-3_a40xc1.png",
     },
   },
   {
@@ -42,7 +45,8 @@ const testimonials = [
       name: "Alex Rodriguez",
       role: "Head of Growth",
       company: "ScaleUp Inc",
-      avatar: "/avatar-1.png",
+      avatar:
+        "https://res.cloudinary.com/dmrwefamp/image/upload/v1738590679/avatar-1_zw1kui.png",
     },
   },
   {
@@ -67,7 +71,7 @@ const bgColors = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative px-6 py-24 overflow-hidden bg-[url('/Section.png')] bg-cover bg-center">
+    <section className="relative px-6 py-24 overflow-hidden bg-[url('https://res.cloudinary.com/dmrwefamp/image/upload/v1738589714/test-bg_cp15hz.svg')] bg-cover bg-center">
       {/* Decorative elements */}
       <div className="absolute top-8 left-8">
         <Sparkles className="w-8 h-8 text-white/20" />

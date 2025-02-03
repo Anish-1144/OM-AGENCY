@@ -31,7 +31,11 @@ export default function Header() {
         <div className="p-6 flex items-center justify-between h-36">
           <Link to="/" className="flex-shrink-0">
             <div className="bg-white w-16 h-16 md:w-20 md:h-20 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none">
-              <img src="/logo.png" onClick={handleMenuClose} alt="" />
+              <img
+                src="https://res.cloudinary.com/dmrwefamp/image/upload/v1738591726/logo_jzeacm.png"
+                onClick={handleMenuClose}
+                alt=""
+              />
             </div>
           </Link>
 
@@ -90,7 +94,7 @@ export default function Header() {
           >
             <img
               className="h-10 w-10 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-none transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none hover:bg-white"
-              src="/menu.png"
+              src="https://res.cloudinary.com/dmrwefamp/image/upload/v1738591994/menu_wjpuu2.png"
               alt=""
             />
           </button>
