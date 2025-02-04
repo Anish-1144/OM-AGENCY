@@ -50,9 +50,9 @@ const router = createBrowserRouter([
     ),
     children: [
       {
-        path: "web-design",
+        path: "Web Development",
         element: (
-          <div >
+          <div>
             <ComingSoon />
           </div>
         ),
@@ -74,7 +74,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "video-production",
+        path: "Video Editing",
         element: (
           <div>
             <ComingSoon />

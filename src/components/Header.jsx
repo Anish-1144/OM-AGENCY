@@ -11,10 +11,10 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const ourWorkItems = [
-  { path: "web-design", label: "Web Design" },
+  { path: "Web Development", label: "Web Development" },
   { path: "graphic-design", label: "Graphic Design" },
   { path: "app-development", label: "App Development" },
-  { path: "video-production", label: "Video Production" },
+  { path: "Video Editing", label: "Video Editing" },
   { path: "digital-marketing", label: "Digital Marketing" },
 ];
 
@@ -79,12 +79,18 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button
-              variant="secondary"
-              className="font-bold mb-2 bg-white h-12 w-32 text-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-none transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none hover:bg-white"
+            <a
+              href="https://wa.me/7067995567"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              GET IN TOUCH!
-            </Button>
+              <Button
+                variant="secondary"
+                className="font-bold mb-2 bg-white h-12 w-32 text-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-none transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none hover:bg-white"
+              >
+                GET IN TOUCH!
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

@@ -24,7 +24,7 @@ export default function App() {
         "Dominate search rankings across web and app stores with our data-driven optimization strategies. We combine cutting-edge SEO techniques with ASO expertise to maximize your digital visibility and drive qualified traffic to your platforms.",
     },
     {
-      title: "ORGANIC MARKETING",
+      title: "DIGITAL MARKETING",
       subtitle: "Authentic Growth",
       icon: <TrendingUp className="w-8 h-8" />,
       color: "rgb(0, 255, 255)",
@@ -36,20 +36,20 @@ export default function App() {
         "Build genuine relationships with your audience through authentic content and engagement strategies. Our organic marketing approach focuses on creating meaningful connections that translate into long-term customer loyalty and sustainable business growth.",
     },
     {
-      title: "AI ENGINEERING",
+      title: "WEB & APP",
       subtitle: "& DEVELOPMENT",
       icon: <Smartphone className="w-8 h-8" />,
       color: "rgb(255, 140, 0)",
       details: [
         "AI Agent Development",
-        "Custom GPT Creation",
-        "Process Automation",
+        "Create Stunning, Functional Websites",
+        "Deliver Seamless User Experiences",
       ],
       description:
         "Transform your business operations with cutting-edge AI solutions tailored to your specific needs. Our team develops custom AI agents and GPT models that automate complex processes and deliver intelligent insights for enhanced decision-making.",
     },
     {
-      title: "PERFORMANCE",
+      title: "DIGITAL",
       subtitle: "MARKETING",
       icon: <Video className="w-8 h-8" />,
       color: "rgb(144, 238, 144)",
@@ -61,8 +61,8 @@ export default function App() {
         "Maximize your ROI with data-driven performance marketing strategies that deliver measurable results. We optimize your campaigns in real-time, ensuring every marketing dollar is invested in channels that drive the highest conversion rates.",
     },
     {
-      title: "CREATIVES &",
-      subtitle: "MESSAGING",
+      title: " GRAPIC  &",
+      subtitle: "DESIGN",
       icon: <Brush className="w-8 h-8" />,
       color: "rgb(255, 182, 193)",
       details: [
@@ -73,16 +73,16 @@ export default function App() {
         "Capture attention and drive engagement with compelling visual content and strategic messaging. Our creative team crafts unique narratives and visuals that resonate with your target audience and strengthen your brand identity.",
     },
     {
-      title: "web",
-      subtitle: "DEVELOPMENT",
+      title: "SAAS",
+      subtitle: "SOFTWERE",
       icon: <Globe className="w-8 h-8" />,
       color: "rgb(220, 220, 18)",
       details: [
-        "Create Stunning, Functional Websites",
+        "Create Stunning, Functional SOFTWERE",
         "Deliver Seamless User Experiences",
       ],
       description:
-        "Build powerful, scalable websites that combine stunning design with robust functionality. Our WordPress development solutions deliver exceptional user experiences while ensuring your site is secure, fast, and easy to manage.",
+        "Build powerful, scalable softwere that combine stunning design with robust functionality. Our WordPress development solutions deliver exceptional user experiences while ensuring your site is secure, fast, and easy to manage.",
     },
   ];
 

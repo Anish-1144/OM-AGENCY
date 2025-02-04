@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="bg-[#D91A46] flex flex-col items-start ml-3 md:pl-16 relative text-white mt-24 mb-10 md:mb-48">
+    <div className="bg-[#D91A46] flex flex-col items-start ml-3 md:pl-16 relative text-white mt-24 mb-10 md:mb-44">
       {/* Top text */}
       <h2 className="w-44 text-2xl md:text-3xl font-bold mb-4">
         <img
@@ -42,12 +42,18 @@ export default function Hero() {
       </p>
 
       {/* CTA Button */}
-      <Button
-        size="lg"
-        className="bg-purple-500 md:mt-8 h-10  md:h-16 text-lg md:text-2xl w-28 md:w-44 text-black px-8 py-4  rounded-none border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:bg-purple-400 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:shadow-none transition-all transform hover:translate-x-[-3px] hover:translate-y-[-3px] uppercase font-bold"
+      <a
+        href="https://cal.com/bagora-agency-pfnups/secret"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        LET&apos;S TALK!
-      </Button>
+        <Button
+          size="lg"
+          className="bg-purple-500 md:mt-8 h-10 md:h-16 text-lg md:text-2xl w-28 md:w-44 text-black px-8 py-4 rounded-none border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:bg-purple-400 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:shadow-none transition-all transform hover:translate-x-[-3px] hover:translate-y-[-3px] uppercase font-bold"
+        >
+          LET&apos;S TALK!
+        </Button>
+      </a>
 
       {/* <ChevronDown className="font-greatLakes" /> */}
       <img

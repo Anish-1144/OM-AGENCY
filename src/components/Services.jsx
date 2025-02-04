@@ -106,7 +106,7 @@ export default function Services() {
                 }}
               ></video>
             </div>
-            <h2 className="mb-4 text-2xl font-black">{service.title}</h2>
+            <h2 className="mb-4 text-2xl mt-2 font-black">{service.title}</h2>
             <ul className="mb-6 space-y-2">
               {service.points.map((point, idx) => (
                 <li key={idx} className="flex items-start">

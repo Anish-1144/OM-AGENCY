@@ -5,7 +5,7 @@ import ServiceSection from "./ServiceCards";
 
 export function ServiceBanner() {
   return (
-    <div className="w-full bg-[#D91A46] bg-cover h-full overflow-hidden md:mb-2 text-white p-5 flex flex-col md:flex-row items-center gap-8">
+    <div className="w-full bg-[#D91A46] bg-cover h-full overflow-hidden  md:mt-12 mb-10 md:mb-40 text-white p-5 flex flex-col md:flex-row items-center gap-8">
       {/* Left section with title and description */}
       <div className="flex-1 space-y-4 md:space-y-6">
         <div className="mb-8 rounded-xl border-4 border-black bg-orange-400 p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
@@ -25,9 +25,9 @@ export function ServiceBanner() {
       </div>
 
       {/* Right section with image */}
-      <div className="w-96 md:w-1/2">
+      <div className="w-96 md:w-[600px]">
         <img
-          src="https://res.cloudinary.com/dmrwefamp/image/upload/v1738591537/service_ijraws.png"
+          src="https://res.cloudinary.com/dmrwefamp/image/upload/v1738666752/Programmer_xjf4eu.svg"
           className="w-full h-auto object-cover"
         />
       </div>
