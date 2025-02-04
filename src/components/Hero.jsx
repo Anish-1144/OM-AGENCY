@@ -23,7 +23,7 @@ export default function Hero() {
             "WE ARE BAGORA  AGENCY", // Text to animate
             1000, // Pause for 1 second
             "", // Clear text
-            500, // Pause for 0.5 seconds
+            1000, // Pause for 0.5 seconds
           ]}
           wrapper="h1"
           speed={5}
