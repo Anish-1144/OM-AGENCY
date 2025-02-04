@@ -68,7 +68,7 @@ export default function Footer() {
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-black">Quick Links</h3>
             <nav className="flex flex-col space-y-3">
-              {["Services", "Career", "Work", "Contact us"].map((item) => (
+              {["Services", "Hiring", "Work","Home"].map((item) => (
                 <Link
                   key={item}
                   href={`/${item.toLowerCase().replace(" ", "-")}`}

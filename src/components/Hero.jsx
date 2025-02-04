@@ -20,14 +20,14 @@ export default function Hero() {
       <div className="text-left mb-4">
         <TypeAnimation
           sequence={[
-            "WE ARE BAGORA AGENCY", // Text to animate
+            "WE ARE BAGORA  AGENCY", // Text to animate
             1000, // Pause for 1 second
             "", // Clear text
             500, // Pause for 0.5 seconds
           ]}
           wrapper="h1"
           speed={5}
-          className="text-[54px] md:text-9xl font-gogo"
+          className="text-5xl md:text-9xl font-gogo"
           style={{
             WebkitTextStroke: "2px white",
             textShadow: "4px 4px 0px rgba(0,0,0,1)",
