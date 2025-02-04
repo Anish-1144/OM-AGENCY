@@ -29,7 +29,7 @@ const jobCategories = [
 export default function Job() {
   return (
     <div>
-      <div className="min-h-60 bg-[#D91A46] p-6 md:mt-6 md:pl-24 md:pr-24 font-bold">
+      <div className="min-h-60 w-full bg-[#D91A46] p-6 md:mt-6 md:pl-24 md:pr-24 font-bold">
         {/* Header Box */}
         <div className="mb-8 rounded-xl border-4 border-black bg-orange-400 p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
           <h2 className="text-2xl font-greatLakes md:text-3xl">
@@ -78,7 +78,7 @@ export default function Job() {
         speed={100}
         gradient={false}
         direction="right"
-        className="py-1 bg-black w-full m-1"
+        className="py-1 bg-black w-full "
       >
         <span className="text-4xl  font-black text-white whitespace-nowrap mr-8">
           * GROW WITH US * GROW WITH US * GROW WITH US * GROW WITH US * GROW
