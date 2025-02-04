@@ -26,8 +26,8 @@ export default function Hero() {
             500, // Pause for 0.5 seconds
           ]}
           wrapper="h1"
-          speed={10}
-          className="text-6xl md:text-9xl font-gogo"
+          speed={5}
+          className="text-[54px] md:text-9xl font-gogo"
           style={{
             WebkitTextStroke: "2px white",
             textShadow: "4px 4px 0px rgba(0,0,0,1)",
