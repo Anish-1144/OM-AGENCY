@@ -1,29 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: 'GreatLakes';
-  src: url('fonts/great-lakes.ttf') format('truetype');
+  src: url('/fonts/great-lakes.ttf') format('truetype'); /* Use absolute path */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'GreatLakes1';
-  src: url('fonts/great-lakes1.ttf') format('truetype');
+  src: url('/fonts/great-lakes1.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'font4';
-  src: url('fonts/font4.ttf') format('truetype');
+  src: url('/fonts/font4.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'gogo';
-  src: url('fonts/gogo.ttf') format('truetype');
+  src: url('/fonts/gogo.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
