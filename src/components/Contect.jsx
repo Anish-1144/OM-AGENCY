@@ -71,7 +71,7 @@ export default function Contact() {
         </p>
       </div>
 
-      <div className="border-4 bg-gray-500 border-black rounded-3xl w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto bg-white/90 p-2 sm:p-2 shadow-3xl">
+      <div className="border-4 bg-slate-700 border-black rounded-3xl w-full max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto bg-white/90 p-2 sm:p-2 shadow-3xl">
         <div className="border-4 border-black p-6 rounded-2xl text-2xl bg-white ">
           <form ref={form} onSubmit={handleSubmit} className="space-y-6">
             {/* Name Fields */}
@@ -188,10 +188,13 @@ export default function Contact() {
 
             {/* Submit Button */}
             <div className="flex justify-center">
+             
               <Button
                 type="submit"
                 size="lg"
-                className="bg-purple-500 text-white w-full sm:w-auto px-8 py-4 text-lg font-bold uppercase"
+                className="bg-purple-500 text-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] 
+                         rounded-none transition-all hover:translate-x-[3px] hover:translate-y-[3px] 
+                         hover:shadow-none hover:bg-purple-700"
               >
                 Send
               </Button>
