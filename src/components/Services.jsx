@@ -1,5 +1,5 @@
 "use client";
-
+import { BadgeCheck } from "lucide-react";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -89,17 +89,15 @@ export default function Services() {
         {services.map((service, index) => (
           <Card
             key={index}
-            className={`${service.color} rounded-3xl border-4 border-black p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]`}
+            className={`${service.color} rounded-3xl border-4 border-black p-6 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] transition-all hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,0.9)]`}
+            onMouseEnter={(e) => e.currentTarget.querySelector("video").play()}
+            onMouseLeave={(e) => e.currentTarget.querySelector("video").pause()}
           >
-            {" "}
-            <div className=" rounded">
+            <div className="rounded">
               <video
                 src={service.video}
                 muted
                 loop
-                // autoPlay
-                onMouseEnter={(e) => e.target.play()}
-                onMouseLeave={(e) => e.target.pause()}
                 style={{
                   borderRadius: "1rem", // Adjust the value for rounding as needed
                   backgroundColor: "transparent", // Ensures the background is transparent
@@ -110,14 +108,16 @@ export default function Services() {
             <ul className="mb-6 space-y-2">
               {service.points.map((point, idx) => (
                 <li key={idx} className="flex items-start">
-                  <span className="mr-2 text-xl">•</span>
-                  <span className="text-sm font-medium">{point}</span>
+                  <span className="mr-2 text-xl">
+                    <BadgeCheck />
+                  </span>
+                  <span className="text-base font-semibold">{point}</span>
                 </li>
               ))}
             </ul>
             <Button
               variant="outline"
-              className="w-full border-2 border-black bg-white font-bold hover:bg-black hover:text-white"
+              className="w-full text-lg h-10 border-2 rounded-lg border-black bg-white font-bold hover:bg-black hover:text-white"
             >
               View more
               <ArrowUpRight className="ml-2 h-4 w-4" />
@@ -134,7 +134,8 @@ export default function Services() {
         className="py-1 bg-black"
       >
         <span className="text-4xl font-black text-yellow-300 whitespace-nowrap mr-8">
-          CASE STUDIES CASE STUDIES CASE STUDIES CASE STUDIES CASE STUDIES CASE
+          CASE STUDIES * CASE STUDIES * CASE STUDIES * CASE STUDIES * CASE
+          STUDIES * CASE STUDIES
         </span>
       </Marquee>
     </section>
